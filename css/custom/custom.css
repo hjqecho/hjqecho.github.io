@@ -1,0 +1,88 @@
+---------------返回顶部-----------------*/
+/*图片top位置*/
+.goup{
+    max-width: 70px !important;
+    transform: translate(-75px,-107px) !important;
+}
+
+/*---------------页脚-----------------*/
+/*页脚自定义字段字体颜色*/
+#footer-wrap {
+    color: #2b2d44;
+}
+/*页脚a标签字体颜色*/
+#footer-wrap a {
+    color: #2b2d44;
+}
+
+/*-----------头部导航栏文字颜色---------*/
+#nav a {
+    color: #f9f2f4;
+}
+/*------------card透明度--------------*/
+#aside-content .card-widget{
+    background: rgba(255, 255, 255, .7);
+}
+#post{
+    background: rgba(255, 255, 255, .7);
+}
+
+/*-------------------鼠标图标--------------------*/
+body {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/Arrow.cur), auto;
+}
+/*文本指针样式*/
+h1,h2,h3,h4,h5,p,ul,li,td {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/IBeam.cur),auto
+}
+/*按钮*/
+button:hover {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/Hand.cur), auto;
+}
+/*i标签*/
+i:hover {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/Hand.cur), auto;
+}
+/*up酱*/
+#upj:hover {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/Hand.cur), auto;
+}
+/*分页器*/
+#pagination .page-number:hover {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/Hand.cur), auto;
+}
+/*a标签*/
+a:hover {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/Hand.cur), auto;
+}
+/*图片*/
+img:hover {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/Hand.cur), auto;
+}
+/*---------滚动条------------*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #596477;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    border-radius: 2em;
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+::-moz-selection {
+    color: #fff;
+    background-color: #596477;
+}
+/*----------------音乐图标------------------*/
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+}
+
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+}
