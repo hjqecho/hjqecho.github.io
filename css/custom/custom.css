@@ -84,6 +84,10 @@ a:hover {
 img:hover {
     cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/Hand.cur), auto;
 }
+/*图片*/
+input:hover {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img/cur/IBeam.cur), auto;
+}
 /*---------滚动条------------*/
 ::-webkit-scrollbar {
     width: 10px;
@@ -111,3 +115,80 @@ img:hover {
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
   left: 0 !important;
 }
+
+/*--------------字体设置-----------------*/
+@font-face{
+  font-family:'home' ;  /* 字体名自定义即可 */
+  src:url('/font/鹅卵石海报体.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+#site-title {
+  font-family: 'home'
+}
+/*--------------透明度设置-----------------*/
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }
+
+/*----------夜间模式侧边栏和文章背景变黑---------*/
+[data-theme="dark"]
+  #aside-content .card-widget{
+      background: rgba(0, 0, 0, 0.3)!important;
+    }
+[data-theme="dark"]
+  div#post{
+    background: rgba(0, 0, 0, 0.3)!important;
+    }
+
+/*-------------阅读模式修改------------*/
+.read-mode #aside-content .card-widget{
+      background: rgba(158, 204, 171, 0.3)!important;
+    }
+.read-mode div#post{
+    background: rgba(158, 204, 171, 0.3)!important;
+    }
+[data-theme="dark"]
+  .read-mode #aside-content .card-widget{
+        background: rgba(0, 0, 0, 0.3)!important;
+        color: #ffffff;
+      }
+[data-theme="dark"]  
+  .read-mode div#post{
+      background: rgba(0, 0, 0, 0.3)!important;
+      color: #ffffff;
+      }
+/*------------网页头图和网页背景添加图片渐变模糊---------------*/
+/*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
+#page-header,
+#web_bg {
+    -webkit-animation: imgblur 2s 1 ease-in-out;
+    animation: imgblur 2s 1 ease-in-out;
+}
+@keyframes imgblur {
+  0% {
+    filter: blur(1px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+/*适配使用-webkit内核的浏览器 */
+@-webkit-keyframes imgblur {
+  0% {
+    -webkit-filter: blur(1px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
