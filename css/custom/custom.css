@@ -40,17 +40,68 @@
     background: rgba(255, 255, 255, .5);
     backdrop-filter: blur(5px);
 }
-
+/*导航栏*/
 #page-header.nav-fixed #nav{
     background: rgba(255, 255, 255, .5);
     backdrop-filter: blur(5px);
 }
-
+/*搜索栏*/
 #local-search .search-dialog{
     background: rgba(255,255,255,0.9);
     backdrop-filter: blur(1px);
 }
+/*页面*/
+#page{
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
+}
+#archive{
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
+}
 
+/*--------------透明度设置-----------------*/
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }
+
+/*----------夜间模式侧边栏和文章背景变黑---------*/
+[data-theme="dark"]
+  #aside-content .card-widget{
+      background: rgba(0, 0, 0, 0.3)!important;
+    }
+[data-theme="dark"]
+  div#post{
+    background: rgba(0, 0, 0, 0.3)!important;
+    }
+
+/*-------------阅读模式修改------------*/
+.read-mode #aside-content .card-widget{
+      background: rgba(158, 204, 171, 0.3)!important;
+    }
+.read-mode div#post{
+    background: rgba(158, 204, 171, 0.3)!important;
+    }
+[data-theme="dark"]
+  .read-mode #aside-content .card-widget{
+        background: rgba(0, 0, 0, 0.3)!important;
+        color: #ffffff;
+      }
+[data-theme="dark"]  
+  .read-mode div#post{
+      background: rgba(0, 0, 0, 0.3)!important;
+      color: #ffffff;
+      }
 
 /*-------------------鼠标图标--------------------*/
 body {
@@ -125,48 +176,6 @@ input:hover {
 #site-title {
   font-family: 'home'
 }
-/*--------------透明度设置-----------------*/
-/* 页脚透明 */
-#footer{
-  background: transparent!important;
-}
-/*夜间模式伪类遮罩层透明*/
-[data-theme="dark"]
-  #footer::before{
-      background: transparent!important;
-    }
-[data-theme="dark"]
-  #page-header::before{
-    background: transparent!important;
-    }
-
-/*----------夜间模式侧边栏和文章背景变黑---------*/
-[data-theme="dark"]
-  #aside-content .card-widget{
-      background: rgba(0, 0, 0, 0.3)!important;
-    }
-[data-theme="dark"]
-  div#post{
-    background: rgba(0, 0, 0, 0.3)!important;
-    }
-
-/*-------------阅读模式修改------------*/
-.read-mode #aside-content .card-widget{
-      background: rgba(158, 204, 171, 0.3)!important;
-    }
-.read-mode div#post{
-    background: rgba(158, 204, 171, 0.3)!important;
-    }
-[data-theme="dark"]
-  .read-mode #aside-content .card-widget{
-        background: rgba(0, 0, 0, 0.3)!important;
-        color: #ffffff;
-      }
-[data-theme="dark"]  
-  .read-mode div#post{
-      background: rgba(0, 0, 0, 0.3)!important;
-      color: #ffffff;
-      }
 /*------------网页头图和网页背景添加图片渐变模糊---------------*/
 /*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
 #page-header,
@@ -192,3 +201,12 @@ input:hover {
   }
 }
 
+/*--------归档生肖-----------------*/
+svg.icon {
+  /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */
+   width: 1em; height: 1em;
+   /* width和height定义图标的默认宽度和高度*/
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
