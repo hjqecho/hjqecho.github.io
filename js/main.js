@@ -513,7 +513,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const $target = e.target.id ? e.target : e.target.parentNode
     switch ($target.id) {
       case 'go-up':
-        console.log("123")
         rightSideFn.scrollToTop()
         break
       case 'rightside_config':

@@ -27,22 +27,22 @@
 /*------------card透明度--------------*/
 /*侧边栏*/
 #aside-content .card-widget{
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .7);
     backdrop-filter: blur(5px);
 }
 /*文章*/
 #post{
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .7);
     backdrop-filter: blur(5px);
 }
 /*首页文章*/
 #recent-posts .recent-post-item{
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .7);
     backdrop-filter: blur(5px);
 }
 /*导航栏*/
 #page-header.nav-fixed #nav{
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .7);
     backdrop-filter: blur(5px);
 }
 /*搜索栏*/
@@ -52,19 +52,19 @@
 }
 /*页面*/
 #page{
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .7);
     backdrop-filter: blur(5px);
 }
 #archive{
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .7);
     backdrop-filter: blur(5px);
 }
 #category{
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .7);
     backdrop-filter: blur(5px);
 }
 #tag{
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .7);
     backdrop-filter: blur(5px);
 }
 /*--------------透明度设置-----------------*/
@@ -288,4 +288,12 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
     margin-left: -0.9rem;
     font-size: 0.66rem;
     margin-top: 0.0rem;
+}
+/*hide-toggle样式*/
+#post .toggle{
+    border-radius: 3px;
+}
+/*tabs样式*/
+#post .tabs{
+    border-radius: 3px;
 }
