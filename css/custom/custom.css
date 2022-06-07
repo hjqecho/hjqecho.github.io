@@ -300,3 +300,8 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 #post .tabs{
     border-radius: 3px;
 }
+/*hide button样式*/
+.hide-button{
+    background: #11121a;
+    border-radius: 3px;
+}
