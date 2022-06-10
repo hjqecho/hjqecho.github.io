@@ -27,44 +27,44 @@
 /*------------card透明度--------------*/
 /*侧边栏*/
 #aside-content .card-widget{
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
     backdrop-filter: blur(5px);
 }
 /*文章*/
 #post{
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
     backdrop-filter: blur(5px);
 }
 /*首页文章*/
 #recent-posts .recent-post-item{
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
     backdrop-filter: blur(5px);
 }
 /*导航栏*/
 #page-header.nav-fixed #nav{
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
     backdrop-filter: blur(5px);
 }
 /*搜索栏*/
 #local-search .search-dialog{
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255 ,255, .8);
     backdrop-filter: blur(1px);
 }
 /*页面*/
 #page{
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
     backdrop-filter: blur(5px);
 }
 #archive{
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
     backdrop-filter: blur(5px);
 }
 #category{
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
     backdrop-filter: blur(5px);
 }
 #tag{
-    background: rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .8);
     backdrop-filter: blur(5px);
 }
 /*--------------透明度设置-----------------*/
@@ -292,6 +292,7 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
     font-size: 0.66rem;
     margin-top: 0.0rem;
 }
+
 /*hide-toggle样式*/
 #post .toggle{
     border-radius: 3px;
@@ -302,6 +303,15 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 }
 /*hide button样式*/
 .hide-button{
-    background: #11121a;
+    background: #5f5f4f!important;
     border-radius: 3px;
+}
+
+/*toc设置*/
+.toc-content{
+    font-family: none;
+    margin: 0!important;
+}
+#aside-content #card-toc .toc-content > * {
+    margin: 0 0 0 10px!important;
 }
