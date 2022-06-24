@@ -111,43 +111,43 @@
       }
 
 /*-------------------鼠标图标--------------------*/
-body {
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Arrow.cur), auto;
+body,html {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Arrow.cur), auto!important;
 }
 /*文本指针样式*/
 h1,h2,h3,h4,h5,p,ul,li,td {
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/IBeam.cur),auto
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/IBeam.cur),auto!important;
 }
 /*按钮*/
 button:hover {
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto;
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto!important;
 }
 /*i标签*/
 i:hover {
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto;
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto!important;
 }
 /*up酱*/
 #upj:hover {
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto;
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto!important;
 }
 /*分页器*/
 #pagination .page-number:hover {
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto;
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto!important;
 }
 /*a标签*/
 a:hover {
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto;
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto!important;
 }
 /*图片*/
 img:hover {
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto;
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto!important;
 }
 /*图片*/
 input:hover {
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/IBeam.cur), auto;
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/IBeam.cur), auto!important;
 }
 summary:hover{
-    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto;
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto!important;
 }
 /*---------滚动条------------*/
 ::-webkit-scrollbar {
@@ -155,6 +155,7 @@ summary:hover{
     height: 10px;
 }
 ::-webkit-scrollbar-thumb {
+    cursor: url(https://npm.elemecdn.com/hjqecho_img@latest/cur/Hand.cur), auto!important;
     background-color: #596477;
     background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
     border-radius: 2em;
@@ -314,4 +315,9 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
 }
 #aside-content #card-toc .toc-content > * {
     margin: 0 0 0 10px!important;
+}
+
+/*着重号*/
+#post emp {
+    border-bottom: 4px dotted #ff6f6f;
 }
