@@ -1,5 +1,5 @@
 /*添加图片top*/
-var top_up = "<img class='gotop' src='https://blog-1311897345.cos.ap-nanjing.myqcloud.com/custom/goup.gif' title='回到顶部' >";
+var top_up = "<img class='gotop' src='https://blog-1311897345.cos.ap-nanjing.myqcloud.com/blog.img/custom/goup.gif' title='回到顶部' >";
 /*添加到返回顶部按钮下*/
 document.getElementById("go-up").innerHTML += top_up;
 
