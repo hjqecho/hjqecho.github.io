@@ -170,22 +170,25 @@ summary:hover{
 /*----------------音乐图标------------------*/
   /* 默认情况下缩进左侧66px，只留一点箭头部分 */
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-  left: -66px !important;
+    left: -66px !important;
 }
 
   /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-  left: 0 !important;
+    left: 0 !important;
 }
 
 /*--------------字体设置-----------------*/
 @font-face{
-  font-family:'home' ;  /* 字体名自定义即可 */
-  src:url('/font/鹅卵石海报体mini.ttf'); /* 字体文件路径 */
-  font-display : swap;
+    font-family:'home' ;  /* 字体名自定义即可 */
+    src:url('/font/鹅卵石海报体mini.ttf'); /* 字体文件路径 */
+    font-display : swap;
 }
 #site-title {
-  font-family: 'home'
+    font-family: 'home'
+}
+#blog_name{
+    font-family: 'home'
 }
 /*------------网页头图和网页背景添加图片渐变模糊---------------*/
 /*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
