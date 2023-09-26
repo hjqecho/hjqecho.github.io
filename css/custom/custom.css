@@ -116,7 +116,7 @@ body,html {
 }
 /*文本指针样式*/
 h1,h2,h3,h4,h5,p,ul,li,td {
-    cursor: url(https://blog-1311897345.cos.ap-nanjing.myqcloud.com/blog.img/cur/IBeam.cur),auto!important;
+    cursor: url(https://blog-1311897345.cos.ap-nanjing.myqcloud.com/blog.img/cur/IBeam.cur), auto!important;
 }
 /*按钮*/
 button:hover {
